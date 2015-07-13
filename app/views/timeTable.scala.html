@@ -1,0 +1,54 @@
+@import models.session.Time
+@(timeList: List[Time])
+
+@main {
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Добавление нового времени</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="@routes.TimeController.addTime()" method="post" id="myForm">
+                        <div class="form-group">
+                            <label for="time">Время</label>
+                            <input type="time" name="time" id="time">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                    <button type="submit" form="myForm" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Время</th>
+                <th><!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    </button>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+        @for(time <- timeList) {
+            <tr>
+                <td>@time.id</td>
+                <td>@time.time</td>
+                <td></td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

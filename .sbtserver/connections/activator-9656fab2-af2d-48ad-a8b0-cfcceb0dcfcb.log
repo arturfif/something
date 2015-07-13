@@ -1,0 +1,26 @@
+New log file opened at Mon Jul 06 21:36:37 EEST 2015 by 10096@arturfif
+Sending msg to client activator-9656fab2-af2d-48ad-a8b0-cfcceb0dcfcb: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: D:\DIIT\Play\activator-1.3.5-minimal\quest220\.sbtserver\connections\master.log))
+Sending msg to client activator-9656fab2-af2d-48ad-a8b0-cfcceb0dcfcb: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: D:\DIIT\Play\activator-1.3.5-minimal\quest220\.sbtserver\master.log))
+Sending msg to client activator-9656fab2-af2d-48ad-a8b0-cfcceb0dcfcb: DetachedLogEvent(LogMessage(debug,sbt client logs are in: D:\DIIT\Play\activator-1.3.5-minimal\quest220\.sbtserver\connections\activator-9656fab2-af2d-48ad-a8b0-cfcceb0dcfcb.log))
+Reading next message from client.
+Got request: ListenToEvents()
+Reading next message from client.
+Got request: ListenToBuildChange()
+Reading next message from client.
+Got request: SendSyntheticBuildChanged()
+Reading next message from client.
+Got request: KeyLookupRequest(discoveredMainClasses)
+Reading next message from client.
+Got request: KeyLookupRequest(mainClass)
+Reading next message from client.
+Got request: KillServerRequest()
+Reading next message from client.
+Got request: KillServerRequest()
+Reading next message from client.
+Got request: KillServerRequest()
+Reading next message from client.
+Got request: ExecutionRequest(compile)
+Reading next message from client.
+Client activator-9656fab2-af2d-48ad-a8b0-cfcceb0dcfcb closed, java.net.SocketException: Socket closed, shutting down
+Client activator-9656fab2-af2d-48ad-a8b0-cfcceb0dcfcb thread exiting.
+Closing the 10096@arturfif logs at Mon Jul 06 21:37:05 EEST 2015, goodbye.

@@ -1,0 +1,30 @@
+@import java.time.LocalDate
+@import java.util.Calendar
+@(calendar: Calendar)
+
+@main {
+
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Дата</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @for(i <- 0 to 6) {
+                @calendar.add(Calendar.DATE, 1)
+                <tr>
+                    <td>@calendar.get(Calendar.DATE).@(calendar.get(Calendar.MONTH)+1).@calendar.get(Calendar.YEAR)</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

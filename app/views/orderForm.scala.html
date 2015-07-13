@@ -1,0 +1,36 @@
+
+
+@main {
+    <form action="@routes.OrderController.addOrder()" method="post">
+        <div class="form-group">
+            <label for="roomId">№ комнаты</label>
+            <input type="text" name="roomId" id="roomId">
+        </div>
+
+        <div class="form-group">
+            <label for="clientName">Имя</label>
+            <input type="text" name="clientName" id="clientName">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Электронная почта</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="form-group">
+            <label for="phoneNumber">Сотовый</label>
+            <input type="text" name="phoneNumber" id="phoneNumber">
+        </div>
+
+        <div class="form-group">
+            <label for="date">Дата</label>
+            <input type="date" name="date" id="date">
+        </div>
+
+        <div class="form-group">
+            <label for="timeId">№ времени</label>
+            <input type="text" name="timeId" id="timeId">
+        </div>
+        <button type="submit" class="btn-default">Добавить</button>
+    </form>
+}

@@ -1,0 +1,33 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET         /createOrder         controllers.OrderController.createOrder()
+
+POST        /addOrder            controllers.OrderController.addOrder()
+
+GET         /ordertable          controllers.OrderController.showOrderTable()
+
+GET         /timetable           controllers.TimeController.showTimeTable()
+
+POST        /addTime             controllers.TimeController.addTime()
+
+
+#GET         /create_room           controllers.RoomController.createRoom()
+#
+#POST        /addRoom             controllers.RoomController.addRoom()
+#
+#GET         /rooms               controllers.RoomController.rooms()
+#
+#GET    /rooms/:id  controllers.RoomController.showRoom(id)
+
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file        controllers.Assets.at(path="/public", file)
+
+# create order
+
+
